@@ -49,9 +49,11 @@ if user_choice == 0:
 elif user_choice == 1:
     print("Your Choice : Paper")
     print(paper)
-else:
-    print("Your Choice : Scissors")
+elif user_choice ==2:
+    print("computer's Choice : Scissors")
     print(scissors)
+else:
+    print("You have entered an invalid number, You loose!")
 
 if computer_choice == user_choice:
     print('This is a draw.')
