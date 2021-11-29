@@ -16,8 +16,8 @@ letter1 = []
 len_letters_list = len(letters_list)
 for letter in range(letters):
     # generating random indexes from letter list 
-    random_letter = random.randint(0,len_letters_list-1)
-    letter1.append(letters_list[random_letter])
+    random_letter_index = random.randint(0,len_letters_list-1)
+    letter1.append(letters_list[random_letter_index])
 
 
 # creating a array to store random symbols 
@@ -25,8 +25,8 @@ symbol1 = []
 len_symbols_list = len(symbols_list)
 for letter in range(symbols):
     # generating random indexes from letter list 
-    random_symbols = random.randint(0,len_symbols_list-1)
-    symbol1.append(symbols_list[random_symbols])
+    random_symbols_index = random.randint(0,len_symbols_list-1)
+    symbol1.append(symbols_list[random_symbols_index])
 
 
 # creating a array to store random numbers 
@@ -34,8 +34,8 @@ number1 = []
 len_numbers_list = len(numbers_list)
 for letter in range(numbers):
     # generating random indexes from letter list 
-    random_numbers = random.randint(0,len_numbers_list-1)
-    number1.append(numbers_list[random_numbers])
+    random_numbers_index = random.randint(0,len_numbers_list-1)         #we can also use : random.choice(list_name) to automatically choose a random element
+    number1.append(numbers_list[random_numbers_index])
 
 
 # creating main password list 
