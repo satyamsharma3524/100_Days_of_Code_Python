@@ -1,3 +1,5 @@
+import click
+
 travel_log = [
 {
   "country": "France",
@@ -20,4 +22,5 @@ def add_new_country(country,visits,cities_visited):
 
 
 add_new_country("Russia", 2, ["Moscow", "Saint Petersburg"])
+click.clear()
 print(travel_log)
