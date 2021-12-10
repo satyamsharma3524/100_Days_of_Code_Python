@@ -1,22 +1,5 @@
 ############### Blackjack Project #####################
-
-#Difficulty Normal 😎: Use all Hints below to complete the project.
-#Difficulty Hard 🤔: Use only Hints 1, 2, 3 to complete the project.
-#Difficulty Extra Hard 😭: Only use Hints 1 & 2 to complete the project.
-#Difficulty Expert 🤯: Only use Hint 1 to complete the project.
-
-############### Our Blackjack House Rules #####################
-
-## The deck is unlimited in size. 
-## There are no jokers. 
-## The Jack/Queen/King all count as 10.
-## The the Ace can count as 11 or 1.
-## Use the following list as the deck of cards:
-## cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
-## The cards in the list have equal probability of being drawn.
-## Cards are not removed from the deck as they are drawn.
-## The computer is the dealer.
-
+import random
 ##################### Hints #####################
 
 #Hint 1: Go to this website and try out the Blackjack game: 
@@ -33,13 +16,37 @@
 
 #Hint 4: Create a deal_card() function that uses the List below to *return* a random card.
 #11 is the Ace.
-#cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
+cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
+random_card = 0
 
-#Hint 5: Deal the user and computer 2 cards each using deal_card() and append().
-#user_cards = []
-#computer_cards = []
+user_cards = []
+computer_cards = []
+
+def deal_card():
+    random_card = random.choice(cards)
+    user_cards.append(random_card)
+    random_card = random.choice(cards)
+    computer_cards.append(random_card)
+
+for i in range(2):
+    deal_card()
+
+print(f"User cards are : {user_cards}")
+print(f"Computer cards are : {computer_cards}")
 
 #Hint 6: Create a function called calculate_score() that takes a List of cards as input 
+user_score = 0
+computer_score = 0
+def calculate_score(cards):
+    score = sum(cards)
+    return score
+    
+user_score = int(calculate_score(user_cards))
+computer_score = int(calculate_score(computer_cards))
+
+print(f"User scores are : {user_score}")
+print(f"Computer scores are : {computer_score}")
+
 #and returns the score. 
 #Look up the sum() function to help you do this.
 
