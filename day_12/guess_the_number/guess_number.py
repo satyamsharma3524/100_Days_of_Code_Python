@@ -22,7 +22,7 @@ def game():
         print(f"you have {lives} attempts to guess the number.")
         user_guess = int(input("Guess a number : "))
         if computer_guess == user_guess:
-            print("congratulations! You guesses it right.")
+            print("congratulations! You guesses it right, You won!")
             play_again = input("Play again? Type 'y' to start or press 'n'.").lower()
             if play_again=="y":
                 click.clear()
