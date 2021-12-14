@@ -19,6 +19,7 @@ def game():
     computer_guess = guess_the_number()
 
     while lives_remaining:
+        print(f"you have {lives} attempts to guess the number.")
         user_guess = int(input("Guess a number : "))
         if computer_guess == user_guess:
             print("congratulations! You guesses it right.")
