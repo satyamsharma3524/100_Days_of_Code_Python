@@ -12,6 +12,7 @@ def take_money():
 
 
 def check_resources(waters, coffees, milks, order):
+    """This function checks the resources available in the machine."""
     if waters >= machine_resources.MENU[order]["ingredients"]["water"]:
         if coffees >= machine_resources.MENU[order]["ingredients"]["coffee"]:
             if milks >= machine_resources.MENU[order]["ingredients"]["milk"]:
@@ -28,10 +29,12 @@ def check_resources(waters, coffees, milks, order):
 
 
 def return_change(total_cost, actual_cost):
+    """This function returns the change remaining."""
     return total_cost-actual_cost
 
 
 def execute_order(orders):
+    """This function take user order and gives the item by executing order."""
     order_money = int(take_money())
     actual_cost = machine_resources.MENU[orders]["cost"]
     if order_money >= actual_cost:
