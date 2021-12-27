@@ -1,17 +1,17 @@
-import turtle, random
+import turtle
 
 timmy = turtle.Turtle()
 screen = turtle.Screen()
 
 
-def set_point(x,y):
+def set_point(x, y):
     timmy.penup()
     timmy.goto(x, y)
     timmy.pendown()
 
 
-shape_side = 4
-colours = ["red", "green", "blue", "orange", "brown", "purple", "red"]
+shape_side = 3
+colours = ["red", "green", "blue", "orange", "brown", "purple", "red", "red"]
 set_point(0, 100)
 count = 0
 
