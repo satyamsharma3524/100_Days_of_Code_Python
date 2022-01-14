@@ -1,0 +1,8 @@
+﻿    1. Create the screen. (800x600)px.
+    2. Create and move a paddle for player one.
+    3. Create another movable paddle for second player
+    4. Create the ball and make it move.
+    5. Detect collision with wall and bounce back.
+    6. Detect collision with the paddle.
+    7. Detect when the paddle misses.
+    8. Keep score of different player at the top of each player screen.
